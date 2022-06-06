@@ -17,8 +17,10 @@ struct Weather {
     var windSpeed: Double
     var tempMin: Int?
     var tempMax: Int?
+    var temp: Int?
     
     init?(weatherData: WeatherData) {
+        temp = weatherData.fact.temp
         tempAvg = weatherData.fact.tempAvg
         icon = weatherData.fact.icon
         url = weatherData.info.url

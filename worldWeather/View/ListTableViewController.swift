@@ -12,7 +12,6 @@ class ListTableViewController: UITableViewController {
     let nerworkWeatherManager = NetworkWeatherManager()
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         nerworkWeatherManager.fetchWeather()
     }
 

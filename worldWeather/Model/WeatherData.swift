@@ -16,6 +16,7 @@ struct Info: Decodable {
 }
 
 struct Fact: Decodable {
+    let temp: Int?
     let tempAvg: Int?
     let icon: String
     let condition: String
@@ -25,6 +26,7 @@ struct Fact: Decodable {
     let tempMax: Int?
     
     enum CodingKeys: String, CodingKey {
+        case temp = "temp"
         case tempAvg = "temp_avg"
         case icon
         case condition
