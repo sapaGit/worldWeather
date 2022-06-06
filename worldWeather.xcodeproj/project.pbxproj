@@ -16,6 +16,7 @@
 		A0551E24284E3C5A0026FFE0 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0551E23284E3C5A0026FFE0 /* Constant.swift */; };
 		A0551E26284E3D1F0026FFE0 /* NetworkWeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0551E25284E3D1F0026FFE0 /* NetworkWeatherManager.swift */; };
 		A0551E28284E3EEF0026FFE0 /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0551E27284E3EEF0026FFE0 /* WeatherData.swift */; };
+		A0551E2A284E4EF30026FFE0 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0551E29284E4EF30026FFE0 /* Weather.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		A0551E23284E3C5A0026FFE0 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		A0551E25284E3D1F0026FFE0 /* NetworkWeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkWeatherManager.swift; sourceTree = "<group>"; };
 		A0551E27284E3EEF0026FFE0 /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
+		A0551E29284E4EF30026FFE0 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +96,9 @@
 		A0551E22284E3BF50026FFE0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				A0551E25284E3D1F0026FFE0 /* NetworkWeatherManager.swift */,
+				A0551E29284E4EF30026FFE0 /* Weather.swift */,
 				A0551E27284E3EEF0026FFE0 /* WeatherData.swift */,
+				A0551E25284E3D1F0026FFE0 /* NetworkWeatherManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -171,6 +174,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0551E2A284E4EF30026FFE0 /* Weather.swift in Sources */,
 				A0551E1E284E21120026FFE0 /* ListTableViewController.swift in Sources */,
 				A0551E0A284E1E7B0026FFE0 /* AppDelegate.swift in Sources */,
 				A0551E26284E3D1F0026FFE0 /* NetworkWeatherManager.swift in Sources */,

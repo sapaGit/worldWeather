@@ -16,13 +16,13 @@ struct Info: Decodable {
 }
 
 struct Fact: Decodable {
-    let tempAvg: Int
+    let tempAvg: Int?
     let icon: String
     let condition: String
-    let windSpeed: String
+    let windSpeed: Double
     let pressureMm: Int
-    let tempMin: Int
-    let tempMax: Int
+    let tempMin: Int?
+    let tempMax: Int?
     
     enum CodingKeys: String, CodingKey {
         case tempAvg = "temp_avg"
