@@ -13,6 +13,8 @@
 		A0551E13284E1E7C0026FFE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0551E12284E1E7C0026FFE0 /* Assets.xcassets */; };
 		A0551E16284E1E7C0026FFE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0551E14284E1E7C0026FFE0 /* LaunchScreen.storyboard */; };
 		A0551E1E284E21120026FFE0 /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0551E1D284E21120026FFE0 /* ListTableViewController.swift */; };
+		A0551E24284E3C5A0026FFE0 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0551E23284E3C5A0026FFE0 /* Constant.swift */; };
+		A0551E26284E3D1F0026FFE0 /* NetworkWeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0551E25284E3D1F0026FFE0 /* NetworkWeatherManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		A0551E15284E1E7C0026FFE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A0551E17284E1E7C0026FFE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0551E1D284E21120026FFE0 /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
+		A0551E23284E3C5A0026FFE0 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		A0551E25284E3D1F0026FFE0 /* NetworkWeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkWeatherManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,41 @@
 		A0551E08284E1E7B0026FFE0 /* worldWeather */ = {
 			isa = PBXGroup;
 			children = (
-				A0551E09284E1E7B0026FFE0 /* AppDelegate.swift */,
-				A0551E0B284E1E7B0026FFE0 /* SceneDelegate.swift */,
-				A0551E0F284E1E7B0026FFE0 /* Main.storyboard */,
-				A0551E1D284E21120026FFE0 /* ListTableViewController.swift */,
-				A0551E12284E1E7C0026FFE0 /* Assets.xcassets */,
-				A0551E14284E1E7C0026FFE0 /* LaunchScreen.storyboard */,
-				A0551E17284E1E7C0026FFE0 /* Info.plist */,
+				A0551E22284E3BF50026FFE0 /* Model */,
+				A0551E20284E3A5E0026FFE0 /* View */,
+				A0551E1F284E38C40026FFE0 /* Supporting files */,
 			);
 			path = worldWeather;
+			sourceTree = "<group>";
+		};
+		A0551E1F284E38C40026FFE0 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				A0551E09284E1E7B0026FFE0 /* AppDelegate.swift */,
+				A0551E0B284E1E7B0026FFE0 /* SceneDelegate.swift */,
+				A0551E12284E1E7C0026FFE0 /* Assets.xcassets */,
+				A0551E17284E1E7C0026FFE0 /* Info.plist */,
+				A0551E23284E3C5A0026FFE0 /* Constant.swift */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		A0551E20284E3A5E0026FFE0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A0551E0F284E1E7B0026FFE0 /* Main.storyboard */,
+				A0551E1D284E21120026FFE0 /* ListTableViewController.swift */,
+				A0551E14284E1E7C0026FFE0 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A0551E22284E3BF50026FFE0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A0551E25284E3D1F0026FFE0 /* NetworkWeatherManager.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +170,9 @@
 			files = (
 				A0551E1E284E21120026FFE0 /* ListTableViewController.swift in Sources */,
 				A0551E0A284E1E7B0026FFE0 /* AppDelegate.swift in Sources */,
+				A0551E26284E3D1F0026FFE0 /* NetworkWeatherManager.swift in Sources */,
 				A0551E0C284E1E7B0026FFE0 /* SceneDelegate.swift in Sources */,
+				A0551E24284E3C5A0026FFE0 /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +323,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = F978FGBWMJ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = worldWeather/Info.plist;
+				INFOPLIST_FILE = "worldWeather/Supporting files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -320,7 +352,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = F978FGBWMJ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = worldWeather/Info.plist;
+				INFOPLIST_FILE = "worldWeather/Supporting files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
