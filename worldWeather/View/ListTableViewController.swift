@@ -10,12 +10,28 @@ import CoreLocation
 
 class ListTableViewController: UITableViewController {
 
+    let emptyCity = Weather()
+    
+    var citiesArray = [Weather]()
+    
     let nameCitiesArray = ["Armavir", "Kavalersky", "Rostov-on-Don", "Krasnodar"]
     
     let nerworkWeatherManager = NetworkWeatherManager()
     override func viewDidLoad() {
         super.viewDidLoad()
-        nerworkWeatherManager.fetchWeather()
+        if citiesArray.isEmpty {
+            citiesArray = Array(repeating: emptyCity, count: nameCitiesArray.count)
+        }
+        
+        addCities()
+    }
+    
+    func addCities() {
+        getCityWeather(citiesArray: self.nameCitiesArray) { index, weather in
+            self.citiesArray[index] = weather
+            self.citiesArray[index].name = self.nameCitiesArray[index]
+            print(self.citiesArray)
+        }
     }
     
 

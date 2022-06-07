@@ -9,14 +9,14 @@ import Foundation
 
 struct Weather {
     var name: String = "City"
-    var icon: String
-    var url: String
-    var condition: String
-    var pressureMm: Int
-    var windSpeed: Double
-    var temp: Int
-    var feelsLike: Int
-    var humidity: Int
+    var icon: String = ""
+    var url: String = ""
+    var condition: String = ""
+    var pressureMm: Int = 0
+    var windSpeed: Double = 0
+    var temp: Int = 0
+    var feelsLike: Int = 0
+    var humidity: Int = 0
     
     init?(weatherData: WeatherData) {
         if let tempValue = weatherData.fact.temp { temp = tempValue } else { temp = 0 }
@@ -27,5 +27,8 @@ struct Weather {
         windSpeed = weatherData.fact.windSpeed
         feelsLike = weatherData.fact.feelsLike
         humidity = weatherData.fact.humidity
+    }
+    
+    init() {
     }
 }
