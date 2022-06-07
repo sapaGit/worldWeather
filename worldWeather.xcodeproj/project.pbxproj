@@ -18,6 +18,7 @@
 		A0551E28284E3EEF0026FFE0 /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0551E27284E3EEF0026FFE0 /* WeatherData.swift */; };
 		A0551E2A284E4EF30026FFE0 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0551E29284E4EF30026FFE0 /* Weather.swift */; };
 		A0551E2C284F43580026FFE0 /* GetCitiesWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0551E2B284F43580026FFE0 /* GetCitiesWeather.swift */; };
+		A0551E2E284F4CC70026FFE0 /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0551E2D284F4CC70026FFE0 /* ListCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		A0551E27284E3EEF0026FFE0 /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
 		A0551E29284E4EF30026FFE0 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		A0551E2B284F43580026FFE0 /* GetCitiesWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCitiesWeather.swift; sourceTree = "<group>"; };
+		A0551E2D284F4CC70026FFE0 /* ListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				A0551E27284E3EEF0026FFE0 /* WeatherData.swift */,
 				A0551E25284E3D1F0026FFE0 /* NetworkWeatherManager.swift */,
 				A0551E2B284F43580026FFE0 /* GetCitiesWeather.swift */,
+				A0551E2D284F4CC70026FFE0 /* ListCell.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0551E2A284E4EF30026FFE0 /* Weather.swift in Sources */,
+				A0551E2E284F4CC70026FFE0 /* ListCell.swift in Sources */,
 				A0551E1E284E21120026FFE0 /* ListTableViewController.swift in Sources */,
 				A0551E2C284F43580026FFE0 /* GetCitiesWeather.swift in Sources */,
 				A0551E0A284E1E7B0026FFE0 /* AppDelegate.swift in Sources */,

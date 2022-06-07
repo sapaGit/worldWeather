@@ -15,6 +15,9 @@ struct Weather {
     var pressureMm: Int = 0
     var windSpeed: Double = 0
     var temp: Int = 0
+    var tempString: String {
+        return String(temp)
+    }
     var feelsLike: Int = 0
     var humidity: Int = 0
     

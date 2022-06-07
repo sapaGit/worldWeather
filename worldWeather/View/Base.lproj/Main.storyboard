@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Apu-9u-V1S">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Apu-9u-V1S" customClass="ListCell" customModule="worldWeather" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="44.666666030883789" width="414" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Apu-9u-V1S" id="7wP-pf-Bcc">
@@ -73,6 +73,11 @@
                                         <constraint firstItem="ogP-3a-dti" firstAttribute="leading" secondItem="7wP-pf-Bcc" secondAttribute="leading" constant="30" id="xie-GW-7QC"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="conditionCityLabel" destination="Nwa-zn-9AV" id="zf3-lR-oFg"/>
+                                    <outlet property="nameCityLabel" destination="ogP-3a-dti" id="nZh-sj-Kjk"/>
+                                    <outlet property="tempCityLabel" destination="Ahf-Cq-5ac" id="RT9-i8-7qL"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
