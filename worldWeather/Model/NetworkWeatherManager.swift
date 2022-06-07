@@ -20,7 +20,7 @@ struct NetworkWeatherManager {
                 print(String(describing: error))
                 return
             }
-        print(String(data: data, encoding: .utf8)!)
+        //print(String(data: data, encoding: .utf8)!)
             
             if let weather = self.parseJSON(withData: data) {
 //                completionHandler(weather)
@@ -39,7 +39,7 @@ struct NetworkWeatherManager {
             }
             return weather
         } catch let error as NSError {
-            print(error)
+            print(error.localizedDescription)
         }
         return nil
     }

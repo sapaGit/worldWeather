@@ -6,14 +6,18 @@
 //
 
 import UIKit
+import CoreLocation
 
 class ListTableViewController: UITableViewController {
 
+    let nameCitiesArray = ["Armavir", "Kavalersky", "Rostov-on-Don", "Krasnodar"]
+    
     let nerworkWeatherManager = NetworkWeatherManager()
     override func viewDidLoad() {
         super.viewDidLoad()
         nerworkWeatherManager.fetchWeather()
     }
+    
 
     // MARK: - Table view data source
 

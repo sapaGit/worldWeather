@@ -14,12 +14,12 @@ struct Weather {
     var condition: String
     var pressureMm: Int
     var windSpeed: Double
-    var temp: Int?
+    var temp: Int
     var feelsLike: Int
     var humidity: Int
     
     init?(weatherData: WeatherData) {
-        temp = weatherData.fact.temp
+        if let tempValue = weatherData.fact.temp { temp = tempValue } else { temp = 0 }
         icon = weatherData.fact.icon
         url = weatherData.info.url
         condition = weatherData.fact.condition
