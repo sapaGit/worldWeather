@@ -30,25 +30,29 @@ class ListTableViewController: UITableViewController {
         getCityWeather(citiesArray: self.nameCitiesArray) { index, weather in
             self.citiesArray[index] = weather
             self.citiesArray[index].name = self.nameCitiesArray[index]
-            print(self.citiesArray)
+            
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
         }
     }
     
 
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return citiesArray.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as? ListCell else { return UITableViewCell() }
+       var weather = Weather()
+    
+        weather = citiesArray[indexPath.row]
+        cell.configure(weather: weather)
+        
         return cell
     }
 
