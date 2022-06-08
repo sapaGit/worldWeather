@@ -56,4 +56,15 @@ class ListTableViewController: UITableViewController {
         return cell
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showDetail" {
+            guard let indexPath = tableView.indexPathForSelectedRow else { return }
+            let cityWeather = citiesArray[indexPath.row]
+            guard let destVC = segue.destination as? DetailVC else { return }
+            destVC.weatherModel = cityWeather
+            
+        }
+    }
+    
+    
 }

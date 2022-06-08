@@ -77,6 +77,7 @@
                                     <outlet property="conditionCityLabel" destination="Nwa-zn-9AV" id="zf3-lR-oFg"/>
                                     <outlet property="nameCityLabel" destination="ogP-3a-dti" id="nZh-sj-Kjk"/>
                                     <outlet property="tempCityLabel" destination="Ahf-Cq-5ac" id="RT9-i8-7qL"/>
+                                    <segue destination="wt4-K7-nLG" kind="show" identifier="showDetail" id="lET-0v-hqa"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -95,7 +96,7 @@
             <objects>
                 <viewController storyboardIdentifier="DetailVC" id="wt4-K7-nLG" customClass="DetailVC" customModule="worldWeather" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="d7L-ho-aKr">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="hci-r2-kB6" userLabel="Top_stack">
@@ -259,15 +260,16 @@
                             <constraint firstItem="hci-r2-kB6" firstAttribute="top" secondItem="d7L-ho-aKr" secondAttribute="top" constant="100" id="oDg-pi-rgZ"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="m7M-G5-v33"/>
                     <connections>
                         <outlet property="conditionLabel" destination="V1a-y1-I33" id="5ks-wQ-0gB"/>
-                        <outlet property="feelsLikeLabel" destination="hCa-8X-5q9" id="D7P-7E-gLo"/>
-                        <outlet property="humidityLabel" destination="VUA-Q0-1OJ" id="OAy-7n-wnr"/>
+                        <outlet property="feelsLikeLabel" destination="Zlw-FS-nu5" id="cP2-Ck-0ey"/>
+                        <outlet property="humidityLabel" destination="JZQ-5u-cy1" id="9yb-pb-gYu"/>
                         <outlet property="nameCityLabel" destination="ipq-P1-2zy" id="ApZ-IJ-6JY"/>
-                        <outlet property="pressureLabel" destination="Fug-Ot-tDg" id="fjG-lj-Qgj"/>
+                        <outlet property="pressureLabel" destination="ogE-aL-AZF" id="M8h-Bn-Myb"/>
                         <outlet property="tempCityLabel" destination="vD2-97-li5" id="LZc-z4-ebm"/>
                         <outlet property="viewCity" destination="qyE-PE-iqK" id="SJg-ZD-0D8"/>
-                        <outlet property="windSpeedLabel" destination="FXO-Ce-woR" id="2Tz-RM-80N"/>
+                        <outlet property="windSpeedLabel" destination="DbF-Uh-yg2" id="MDa-5x-CpD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="35p-JJ-G7z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

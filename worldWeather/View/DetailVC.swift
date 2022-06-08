@@ -23,21 +23,26 @@ class DetailVC: UIViewController {
     var weatherModel: Weather?
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        refreshLabels()
     }
     
     
     func refreshLabels() {
-        nameCityLabel.text = weatherModel?.name
-        
-        guard let url = URL(string: "https://yastatic.net/weather/i/icons/funky/dark/\(String(describing: weatherModel?.condition)).svg)") else { return }
-        
-        let weatherImage = UIView(SVGURL: url) { image in
-            image.resizeToFit(self.viewCity.bounds)
+        if let nameCity = weatherModel?.name {
+            nameCityLabel.text = nameCity
         }
-        self.viewCity.addSubview(weatherImage)
+        
+        if let url = URL(string: "https://yastatic.net/weather/i/icons/funky/dark/\(weatherModel?.icon)).svg)") {
+            let weatherImage = UIView(SVGURL: url) { (image) in
+                image.resizeToFit(self.viewCity.bounds)
+            }
+            self.viewCity.addSubview(weatherImage)
+        }
+        
         
         conditionLabel.text = weatherModel?.condition
-        tempCityLabel.text = weatherModel?.tempString
+        tempCityLabel.text = "\(String(describing: weatherModel?.temp))"
         pressureLabel.text = "\(String(describing: weatherModel?.pressureMm))"
         windSpeedLabel.text = "\(String(describing: weatherModel?.windSpeed))"
         humidityLabel.text = "\(String(describing: weatherModel?.humidity))"
