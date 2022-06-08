@@ -90,10 +90,10 @@
             </objects>
             <point key="canvasLocation" x="178.2608695652174" y="1.3392857142857142"/>
         </scene>
-        <!--View Controller-->
+        <!--DetailVC-->
         <scene sceneID="Qnt-GY-b80">
             <objects>
-                <viewController id="wt4-K7-nLG" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailVC" id="wt4-K7-nLG" customClass="DetailVC" customModule="worldWeather" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="d7L-ho-aKr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -259,6 +259,16 @@
                             <constraint firstItem="hci-r2-kB6" firstAttribute="top" secondItem="d7L-ho-aKr" secondAttribute="top" constant="100" id="oDg-pi-rgZ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="conditionLabel" destination="V1a-y1-I33" id="5ks-wQ-0gB"/>
+                        <outlet property="feelsLikeLabel" destination="hCa-8X-5q9" id="D7P-7E-gLo"/>
+                        <outlet property="humidityLabel" destination="VUA-Q0-1OJ" id="OAy-7n-wnr"/>
+                        <outlet property="nameCityLabel" destination="ipq-P1-2zy" id="ApZ-IJ-6JY"/>
+                        <outlet property="pressureLabel" destination="Fug-Ot-tDg" id="fjG-lj-Qgj"/>
+                        <outlet property="tempCityLabel" destination="vD2-97-li5" id="LZc-z4-ebm"/>
+                        <outlet property="viewCity" destination="qyE-PE-iqK" id="SJg-ZD-0D8"/>
+                        <outlet property="windSpeedLabel" destination="FXO-Ce-woR" id="2Tz-RM-80N"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="35p-JJ-G7z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
