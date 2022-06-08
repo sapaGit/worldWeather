@@ -33,19 +33,22 @@ class DetailVC: UIViewController {
             nameCityLabel.text = nameCity
         }
         
-        if let url = URL(string: "https://yastatic.net/weather/i/icons/funky/dark/\(weatherModel?.icon)).svg)") {
-            let weatherImage = UIView(SVGURL: url) { (image) in
-                image.resizeToFit(self.viewCity.bounds)
+        if let icon = weatherModel?.icon {
+            if let url = URL(string: "https://yastatic.net/weather/i/icons/funky/dark/\(icon).svg") {
+                let weatherImage = UIView(SVGURL: url) { (image) in
+                    image.resizeToFit(self.viewCity.bounds)
+                }
+
+                self.viewCity.addSubview(weatherImage)
             }
-            self.viewCity.addSubview(weatherImage)
         }
+
+        if let condition = weatherModel?.condition { conditionLabel.text = condition }
+        if let temp = weatherModel?.temp { tempCityLabel.text = String(temp) }
+        if let pressure = weatherModel?.pressureMm { pressureLabel.text = String(pressure) }
+        if let windSpeed = weatherModel?.windSpeed { windSpeedLabel.text = String(windSpeed) }
+        if let humidity = weatherModel?.humidity { humidityLabel.text = String(humidity) }
+        if let feelsLike = weatherModel?.feelsLike { feelsLikeLabel.text = String(feelsLike) }
         
-        
-        conditionLabel.text = weatherModel?.condition
-        tempCityLabel.text = "\(String(describing: weatherModel?.temp))"
-        pressureLabel.text = "\(String(describing: weatherModel?.pressureMm))"
-        windSpeedLabel.text = "\(String(describing: weatherModel?.windSpeed))"
-        humidityLabel.text = "\(String(describing: weatherModel?.humidity))"
-        feelsLikeLabel.text = "\(String(describing: weatherModel?.feelsLike))"
     }
 }
