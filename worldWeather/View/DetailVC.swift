@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import SwiftSVG
 
 class DetailVC: UIViewController {
 
@@ -33,15 +32,15 @@ class DetailVC: UIViewController {
             nameCityLabel.text = nameCity
         }
         
-        if let icon = weatherModel?.icon {
-            if let url = URL(string: "https://yastatic.net/weather/i/icons/funky/dark/\(icon).svg") {
-                let weatherImage = UIView(SVGURL: url) { (image) in
-                    image.resizeToFit(self.viewCity.bounds)
-                }
-
-                self.viewCity.addSubview(weatherImage)
-            }
-        }
+//        if let icon = weatherModel?.icon {
+//            if let url = URL(string: "https://yastatic.net/weather/i/icons/funky/dark/\(icon).svg") {
+//                let weatherImage = UIView(SVGURL: url) { (image) in
+//                    image.resizeToFit(self.viewCity.bounds)
+//                }
+//
+//                self.viewCity.addSubview(weatherImage)
+//            }
+//        }
 
         if let condition = weatherModel?.condition { conditionLabel.text = condition }
         if let temp = weatherModel?.temp { tempCityLabel.text = String(temp) }
