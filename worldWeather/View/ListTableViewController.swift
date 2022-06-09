@@ -94,7 +94,11 @@ class ListTableViewController: UITableViewController {
         let deleteAction = UIContextualAction(style: .destructive, title: "Delete") { (_, _, completionHandler) in
             let editingRow = self.nameCitiesArray[indexPath.row]
             if let index = self.nameCitiesArray.firstIndex(of: editingRow) {
+                if self.isFiltering {
+                    self.filteredCityArray.remove(at: index)
+                } else {
                 self.citiesArray.remove(at: index)
+                }
             }
             tableView.reloadData()
         }
