@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ytT-0q-8kf">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hyg-eI-9h6">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--List Table View Controller-->
+        <!--World Weather-->
         <scene sceneID="NeT-ys-7qC">
             <objects>
                 <tableViewController id="ytT-0q-8kf" customClass="ListTableViewController" customModule="worldWeather" customModuleProvider="target" sceneMemberID="viewController">
@@ -86,17 +86,24 @@
                             <outlet property="delegate" destination="ytT-0q-8kf" id="9Z6-gS-C1e"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="World Weather" id="lWQ-vd-FS8">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="8yn-uZ-qmQ">
+                            <connections>
+                                <action selector="pressAddButton:" destination="ytT-0q-8kf" id="tWC-Jm-JJB"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8lC-aA-DdS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="178.2608695652174" y="1.3392857142857142"/>
+            <point key="canvasLocation" x="1088.4057971014493" y="1.3392857142857142"/>
         </scene>
         <!--DetailVC-->
         <scene sceneID="Qnt-GY-b80">
             <objects>
                 <viewController storyboardIdentifier="DetailVC" id="wt4-K7-nLG" customClass="DetailVC" customModule="worldWeather" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="d7L-ho-aKr">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="hci-r2-kB6" userLabel="Top_stack">
@@ -274,7 +281,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="35p-JJ-G7z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="934.78260869565224" y="7.3660714285714279"/>
+            <point key="canvasLocation" x="1844.9275362318842" y="7.3660714285714279"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="5oB-ra-tX4">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hyg-eI-9h6" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="TVy-U7-Mfy">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ytT-0q-8kf" kind="relationship" relationship="rootViewController" id="KhV-b9-pME"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xI4-3P-4TB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="178.2608695652174" y="1.3392857142857142"/>
         </scene>
     </scenes>
     <resources>

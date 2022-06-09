@@ -25,6 +25,9 @@ class ListTableViewController: UITableViewController {
         
         addCities()
     }
+    @IBAction func pressAddButton(_ sender: UIBarButtonItem) {
+        
+    }
     
     func addCities() {
         getCityWeather(citiesArray: self.nameCitiesArray) { index, weather in

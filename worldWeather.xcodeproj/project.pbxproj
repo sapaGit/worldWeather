@@ -21,6 +21,7 @@
 		A0551E2C284F43580026FFE0 /* GetCitiesWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0551E2B284F43580026FFE0 /* GetCitiesWeather.swift */; };
 		A0551E2E284F4CC70026FFE0 /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0551E2D284F4CC70026FFE0 /* ListCell.swift */; };
 		A0551E30284F547F0026FFE0 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0551E2F284F547F0026FFE0 /* DetailVC.swift */; };
+		A0BCCCE72851A9BE00F3B244 /* addCity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BCCCE62851A9BE00F3B244 /* addCity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		A0551E2B284F43580026FFE0 /* GetCitiesWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCitiesWeather.swift; sourceTree = "<group>"; };
 		A0551E2D284F4CC70026FFE0 /* ListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
 		A0551E2F284F547F0026FFE0 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
+		A0BCCCE62851A9BE00F3B244 /* addCity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addCity.swift; sourceTree = "<group>"; };
 		B6695630E1221A5EDE54EC93 /* Pods-worldWeather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-worldWeather.release.xcconfig"; path = "Target Support Files/Pods-worldWeather/Pods-worldWeather.release.xcconfig"; sourceTree = "<group>"; };
 		FC6DBCAEE9D2C87FB17C3AE4 /* Pods-worldWeather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-worldWeather.debug.xcconfig"; path = "Target Support Files/Pods-worldWeather/Pods-worldWeather.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -123,6 +125,7 @@
 				A0551E25284E3D1F0026FFE0 /* NetworkWeatherManager.swift */,
 				A0551E2B284F43580026FFE0 /* GetCitiesWeather.swift */,
 				A0551E2D284F4CC70026FFE0 /* ListCell.swift */,
+				A0BCCCE62851A9BE00F3B244 /* addCity.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -133,7 +136,6 @@
 				FC6DBCAEE9D2C87FB17C3AE4 /* Pods-worldWeather.debug.xcconfig */,
 				B6695630E1221A5EDE54EC93 /* Pods-worldWeather.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -253,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0551E2A284E4EF30026FFE0 /* Weather.swift in Sources */,
+				A0BCCCE72851A9BE00F3B244 /* addCity.swift in Sources */,
 				A0551E2E284F4CC70026FFE0 /* ListCell.swift in Sources */,
 				A0551E1E284E21120026FFE0 /* ListTableViewController.swift in Sources */,
 				A0551E2C284F43580026FFE0 /* GetCitiesWeather.swift in Sources */,
